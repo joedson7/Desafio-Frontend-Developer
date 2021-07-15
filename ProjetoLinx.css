@@ -1,0 +1,27 @@
+
+header {
+    width: 1500px;
+    height: 400px;
+    -webkit-clip-path: polygon(0 0, 0 270px, 1500px 400px, 1500px 0);
+    clip-path: polygon(0 0, 0 270px, 1500px 400px, 1500px 0);
+    background: #707070 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    font-family:  Helvetica Neue;
+    color: #ffffff;    
+    margin: auto;
+    padding-bottom: 130px;
+    text-align: center;
+  }
+  
+  .buttonh{
+    background: #ffffff; 
+    border-radius: 4px; 
+    width: 160px; 
+    height: 40px; 
+    cursor: pointer; 
+    color: #888888; 
+    border: none; 
+    font-size: 14px/16px; 
+    margin-right: 40px;
+  }
