@@ -20,7 +20,7 @@ function criaColuna(usuario) {
     tdOldPrice.innerHTML = `de: R$${usuario.oldPrice},00`
     tdPrice.innerHTML = ` Por: R$${usuario.price},00`
     tdDescription.innerHTML = usuario.description
-    tdInstallments.innerHTML = `ou ${usuario.installments.count}x de: R$${usuario.installments.value}0`
+    tdInstallments.innerHTML = `ou ${usuario.installments.count}x de: R$${usuario.installments.value}`
     div.appendChild(tdImage);
     div.appendChild(tdNome);
     tdImage.appendChild(imageuser);
@@ -31,6 +31,7 @@ function criaColuna(usuario) {
     coluna.appendChild(div);
 
 
+
     return coluna;
 }
 
@@ -39,13 +40,12 @@ function main() {
     let usuarios = JSON.parse(data);
     let tabela = document.getElementById("tabela");
 
-    //while {
-    let count = 1
+
     usuarios.products.forEach(element => {
         let linha = criaColuna(element);
-        count++
+
         tabela.appendChild(linha);
-        //}
+
     });
 
 }

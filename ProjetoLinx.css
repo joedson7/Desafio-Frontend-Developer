@@ -117,4 +117,8 @@ footer {
 #tabela {
     font-family: helvetica;
     color: #707070;
+    width: 920px;
+    text-align: center;
+    margin: auto;
+    padding: 0 10px;
 }
