@@ -10,8 +10,7 @@
 
     <div style="font: 20px Helvetica ;padding-top: 70px;">uma seleção de produtos</div>
     <div style="font: 40px Helvetica ;padding-top: 5px;">especial para você</div>
-    <div style="font: 16px Helvetica ;padding-top: 24px; padding-bottom: 35px;">Todos os produtos desta lista foram
-        selecionados a partir da sua navegação. Aproveite!</div>
+    <div style="font: 16px Helvetica ;padding-top: 24px; padding-bottom: 35px;">Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</div>
     <a href="https://projetolinxdesktop/conhecaalinx"><button class="buttonh">Conheça a Linx</button></a>
     <!--I created the buttonh class to apply to all header buttons in css-->
     <a href="https://projetolinxdesktop/ajudeoalgoritimo"><button class="buttonh">Ajude o algorítimo</button></a>
@@ -29,19 +28,11 @@
 
 
 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna.
-                Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur.
-                Praesent bibendum arcu risus, sit amet iaculis ex tempus quis.
-                Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas.
-                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                Vestibulum vel urna tortor. Vivamus et arcu non felis tristique eleifend.
-                <p>Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices.
-                    Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat.
-                    Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices
-                    orci.
-                    Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam.
-                    Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur. Praesent bibendum arcu risus, sit amet
+                iaculis ex tempus quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum vel urna tortor. Vivamus
+                et arcu non felis tristique eleifend.
+                <p>Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut,
+                    ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.
                 </p>
             </td>
 
@@ -53,16 +44,47 @@
                     <input type="text" name="email" required style="width: 335px;">
                     <p>CPF:</p>
                     <input type="number" name="CPF" required style="width: 335px;">
-                    <p> <input type="radio" name="sexo" value="op1" style="vertical-align:bottom" ;>Masculino
-                        <input type="radio" name="sexo" value="op2" style="vertical-align:bottom" ;>Feminino <br />
+                    <p> <input type="radio" name="sexo" required value="op1" style="vertical-align:bottom" ;>Masculino
+                        <input type="radio" name="sexo" required value="op2" style="vertical-align:bottom" ;>Feminino <br />
                     </p>
 
                     <input class="buttons" type="submit" value="Enviar">
+                    <!--I creat an class for other type button-->
                 </form>
             </td>
-
         </tr>
     </table>
+
+    <section id="meio">
+        <h3>Sua seleção especial</h3>
+    </section>
+
+    <table id="tabela"></table>
+
+    <script src="ApiLinx.js"></script>
+
+
+    <section id="meio">
+        <h3>Compartilhe a novidade</h3>
+    </section>
+
+    <h4>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h4>
+
+    <form action="mailto:email" method="POST" style="text-align: center; padding-top: 30px;">
+        <table border="0" width="100%">
+            <tr>
+                <td style="padding-left: 300px;" width="40%" valign="top">
+                    <div style="padding-right: 230px;"> Nome do seu amigo:</div>
+                    <input type="text" name="name" required style="width: 335px;"></span>
+                </td>
+                <td style="padding-right: 300px;" width="40%" valign="top">
+                    <div style="padding-right: 305px;"> E-mail:</div>
+                    <input type="text" name="email" required style="width: 335px;"></td>
+            </tr>
+        </table>
+        <p style="padding-top: 20px;"></p>
+        <input class="buttons" type="submit" value="Enviar agora">
+        <p style="padding-top: 30px;"></p>
 
 </body>
 <footer>
