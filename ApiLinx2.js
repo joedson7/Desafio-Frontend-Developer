@@ -68,10 +68,10 @@ function createProductColumn(product) {
 
 
 function insertProductInTable(tableRef, productsData) {
-    const maxColumns = 4;
+    const maxColumns = 2;
     let counter = 0
 
-    for (let linha = 0; linha < 2; linha++) {
+    for (let linha = 0; linha < 1; linha++) {
         const lineRef = createLine()
 
         for (let column = 0; column < maxColumns; column++) {

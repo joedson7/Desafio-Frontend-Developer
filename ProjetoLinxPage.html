@@ -6,7 +6,7 @@
     <title>Projeto Linx Desktop</title>
     <link rel="stylesheet" type="text/css" href="ProjetoLinx.css" />
 </head>
-<header>
+<header style="width: 1500px; height: 270px;">
 
     <div style="font: 20px Helvetica ;padding-top: 70px;">uma seleção de produtos</div>
     <div style="font: 40px Helvetica ;padding-top: 5px;">especial para você</div>
@@ -19,7 +19,7 @@
 
 </header>
 
-<body>
+<body style=" width: 1500px; height: 2050px;">
     <table border="0" width="100%">
         <tr>
             <td style="padding-left: 270px" width="44%" valign="top">
@@ -59,10 +59,11 @@
         <h3>Sua seleção especial</h3>
     </section>
 
-    <table id="tabela"></table>
+    <table id="products"></table>
 
-    <script src="ApiLinx.js"></script>
+    <p style="padding-top: 30px;"></p>
 
+    <button style="margin-left: 40%;" class="buttons" onclick="reRenderTable()">Ainda mais produtos aqui!</button>
 
 
     <section id="meio">
@@ -71,7 +72,8 @@
 
     <h4>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h4>
 
-    <form action="mailto:email" method="POST" style="text-align: center; padding-top: 30px;">
+    <form action="xxxxxxxxxxxxxxx.com" method="POST" style="text-align: center; padding-top: 30px;">
+
         <table border="0" width="100%">
             <tr>
                 <td style="padding-left: 300px;" width="40%" valign="top">
@@ -80,15 +82,19 @@
                 </td>
                 <td style="padding-right: 300px;" width="40%" valign="top">
                     <div style="padding-right: 305px;"> E-mail:</div>
-                    <input type="text" name="email" required style="width: 335px;"></td>
+                    <input type="email" name="email" required style="width: 335px;"></td>
             </tr>
         </table>
+
         <p style="padding-top: 20px;"></p>
+
         <input class="buttons" type="submit" value="Enviar agora">
+
         <p style="padding-top: 30px;"></p>
 
+        <script src="ApiLinx.js"></script>
 </body>
-<footer>
+<footer style="width: 1500px; height: 294px;">
     <div style="padding-top: 160px;">Testando suas habilidades em HTML, CSS e JS.</div>
     <div>Linx Impulse</div>
     <div>2019</div>
