@@ -6,23 +6,25 @@
     <title>Projeto Linx Desktop</title>
     <link rel="stylesheet" type="text/css" href="ProjetoLinx.css" />
 </head>
-<header style="width: 1500px; height: 270px;">
 
-    <div style="font: 20px Helvetica ;padding-top: 70px;">uma seleção de produtos</div>
-    <div style="font: 40px Helvetica ;padding-top: 5px;">especial para você</div>
-    <div style="font: 16px Helvetica ;padding-top: 24px; padding-bottom: 35px;">Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</div>
-    <a href="https://projetolinxdesktop/conhecaalinx"><button class="buttonh">Conheça a Linx</button></a>
-    <!--I created the buttonh class to apply to all header buttons in css-->
-    <a href="https://projetolinxdesktop/ajudeoalgoritimo"><button class="buttonh">Ajude o algorítimo</button></a>
-    <a href="https://projetolinxdesktop/seusprodutos"><button class="buttonh">Seus produtos</button></a>
-    <a href="https://projetolinxdesktop/compartilhe"><button class="buttonh">Compartilhe</button></a>
+<body>
 
-</header>
+    <header>
 
-<body style=" width: 1500px; height: 2050px;">
+        <div style="font: 20px Helvetica ;padding-top: 70px;">uma seleção de produtos</div>
+        <div style="font: 40px Helvetica ;padding-top: 5px;">especial para você</div>
+        <div style="font: 16px Helvetica ;padding-top: 24px; padding-bottom: 35px;">Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</div>
+        <a href="https://projetolinxdesktop/conhecaalinx"><button class="buttonh">Conheça a Linx</button></a>
+        <!--I created the buttonh class to apply to all header buttons in css-->
+        <a href="https://projetolinxdesktop/ajudeoalgoritimo"><button class="buttonh">Ajude o algorítimo</button></a>
+        <a href="https://projetolinxdesktop/seusprodutos"><button class="buttonh">Seus produtos</button></a>
+        <a href="https://projetolinxdesktop/compartilhe"><button class="buttonh">Compartilhe</button></a>
+
+    </header>
+
     <table border="0" width="100%">
         <tr>
-            <td style="padding-left: 270px" width="44%" valign="top">
+            <td width="44%" valign="top">
 
                 <p style="font-size: 20px;">Ajude o algorítimo a ser mais certeiro</p>
 
@@ -55,18 +57,18 @@
         </tr>
     </table>
 
-    <section id="meio">
+    <section id="middle">
         <h3>Sua seleção especial</h3>
     </section>
 
-    <table id="products"></table>
+    <div id="products"></div>
 
     <p style="padding-top: 30px;"></p>
 
     <button style="margin-left: 40%;" class="buttons" onclick="reRenderTable()">Ainda mais produtos aqui!</button>
 
 
-    <section id="meio">
+    <section id="middle">
         <h3>Compartilhe a novidade</h3>
     </section>
 
@@ -93,11 +95,13 @@
         <p style="padding-top: 30px;"></p>
 
         <script src="ApiLinx.js"></script>
+
+        <footer>
+            <div style="padding-top: 160px;">Testando suas habilidades em HTML, CSS e JS.</div>
+            <div>Linx Impulse</div>
+            <div>2019</div>
+        </footer>
+
 </body>
-<footer style="width: 1500px; height: 294px;">
-    <div style="padding-top: 160px;">Testando suas habilidades em HTML, CSS e JS.</div>
-    <div>Linx Impulse</div>
-    <div>2019</div>
-</footer>
 
 </html>
