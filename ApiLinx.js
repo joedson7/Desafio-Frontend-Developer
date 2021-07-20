@@ -3,6 +3,7 @@ const urlApi = page =>
 
 async function getData(page) {
     const { products } = await (await fetch(urlApi(page))).json();
+
     return products;
 
 }
